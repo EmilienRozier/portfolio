@@ -1,6 +1,6 @@
 <template>
     <div class="fixed flex w-full h-10 justify-center items-center z-10 color-primary">
-        <ul class="flex w-1/3 justify-around backdrop-blur-xl h-full items-center mt-3 px-10 rounded-full">
+        <ul class="flex w-9/10 lg:w-1/2 justify-around backdrop-blur-xl h-full items-center mt-3 px-10 rounded-full">
             <li>
                 <NuxtLink to="#header">Accueil</NuxtLink>
             </li>
