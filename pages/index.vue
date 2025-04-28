@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { useSmoothScroll } from '~/composables/useSmoothScroll';
 
-
-// const { data: home } = await useAsyncData(() => queryCollection('content').path('/').first())
-// const home = await queryCollection('content').path('/').first()
+const projects = await queryCollection('projects').all();
 
 // useSeoMeta({
 //   title: home.value?.title,
@@ -22,7 +20,7 @@ onMounted(() => {
     <section>
         <About />
 
-        <ProjectsContent />
+        <ProjectsContent :items="projects" />
     </section>
     <!-- <ContentRenderer v-if="home" :value="home" />
     <div v-else>Home not found</div> -->

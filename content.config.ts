@@ -7,7 +7,7 @@ export default defineContentConfig({
             type: 'page',
             schema: z.object({
                 title: z.string(),
-                description: z.string(),
+                desc: z.string(),
                 tags: z.array(z.string()),
                 date: z.date()
             })
